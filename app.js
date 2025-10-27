@@ -23,12 +23,11 @@ const {
     getPesquisaConversa 
 } = require('./modulo/funcoes.js')
 
-// Define a porta padrão da API
-const PORT = process.env.PORT || 8080
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
 // Instancia na classe do express
 const app = express()
+
+// Define a porta padrão da API
+const PORT = process.env.PORT || 8080
 
 // Configurações do CORS
 app.use((request, response, next)=>{
